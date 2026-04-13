@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.gokhanibrikci/inday-holiday-api",
+  "title": "Inday - Public Holiday API",
+  "description": "Public holiday data for 30+ countries. Check holidays, working days and calendars via AI assistants.",
+  "version": "1.0.0",
+  "homepage": "https://inday.co",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://inday.co/api/mcp",
+      "headers": [
+        {
+          "name": "X-API-KEY",
+          "description": "Your Inday API key — get one free at https://inday.co/signup",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
