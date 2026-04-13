@@ -1,0 +1,14 @@
+startCommand:
+  type: url
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API Key
+        description: Your Inday API key — get one free at https://inday.co/signup
+    required:
+      - apiKey
+  externalUrl: "https://inday.co/api/mcp"
+  headers:
+    X-API-KEY: "{{config.apiKey}}"
