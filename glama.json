@@ -1,0 +1,21 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/glama.json",
+  "name": "inday-mcp-server",
+  "description": "MCP server for Inday Public Holiday API — get public holidays and working day data for 100+ countries",
+  "license": "MIT",
+  "homepage": "https://inday.co",
+  "repository": "https://github.com/gokhanibrikci/inday-mcp-server",
+  "server": {
+    "type": "streamable-http",
+    "url": "https://inday.co/api/mcp",
+    "headers": {
+      "X-API-KEY": "${API_KEY}"
+    }
+  },
+  "env": {
+    "API_KEY": {
+      "description": "Your Inday API key — get one free at https://inday.co",
+      "required": true
+    }
+  }
+}
